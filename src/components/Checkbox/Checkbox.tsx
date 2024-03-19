@@ -1,12 +1,13 @@
-import type { FC, ReactNode } from 'react';
+import { ChangeEvent, FC } from 'react';
 
 import { Checkbox as MuiCheckbox, CheckboxProps } from '@mui/material';
 
 interface ICheckboxProps extends CheckboxProps {
-    label?: ReactNode;
     size?: 'small' | 'medium' | 'large';
     color?: 'primary' | 'secondary' | 'error' | 'info' | 'success' | 'warning' | 'default';
-    icon?: ReactNode;
-    checkedIcon?: ReactNode;
+    disabled?: boolean;
+    required?: boolean;
+    onChange?: (event: ChangeEvent<HTMLInputElement>, checked: boolean) => void;
 }
-export const Checkbox: FC<ICheckboxProps> = () => <MuiCheckbox />;
+
+export const Checkbox: FC<ICheckboxProps> = (props) => <MuiCheckbox {...props} />;
