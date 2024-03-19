@@ -1,30 +1,37 @@
-# React + TypeScript + Vite
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+# Storybook
 
-Currently, two official plugins are available:
+This project is aimed at facilitating the development of UI components using Storybook.
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react/README.md) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+## Project Description
 
-## Expanding the ESLint configuration
+The "Storybook" project is built using React and Storybook. It provides a development environment for creating, testing, and showcasing UI components in isolation.
 
-If you are developing a production application, we recommend updating the configuration to enable type aware lint rules:
+## Installation
 
-- Configure the top-level `parserOptions` property like this:
+1. Clone the repository to your computer.
+2. Run the command `pnpm install` to install dependencies.
 
-```js
-export default {
-  // other rules...
-  parserOptions: {
-    ecmaVersion: 'latest',
-    sourceType: 'module',
-    project: ['./tsconfig.json', './tsconfig.node.json'],
-    tsconfigRootDir: __dirname,
-  },
-}
-```
+## Usage
 
-- Replace `plugin:@typescript-eslint/recommended` to `plugin:@typescript-eslint/recommended-type-checked` or `plugin:@typescript-eslint/strict-type-checked`
-- Optionally add `plugin:@typescript-eslint/stylistic-type-checked`
-- Install [eslint-plugin-react](https://github.com/jsx-eslint/eslint-plugin-react) and add `plugin:react/recommended` & `plugin:react/jsx-runtime` to the `extends` list
+1. Start the development mode by running the command `npm run storybook`. This will launch Storybook's development server.
+2. Access Storybook in your browser at [http://localhost:6006](http://localhost:6006) to view and interact with your components.
+
+## Command Scenarios
+
+- `npm run storybook`: Starts the Storybook development server.
+- `npm run build-storybook`: Builds the Storybook for production.
+- `npm run lint`: Checks the code against linting rules.
+
+## Dependencies
+
+The main dependencies of the project are:
+
+- React: a JavaScript library for building user interfaces.
+- Storybook: a tool for developing UI components in isolation.
+
+Development dependencies include various packages for linting, code formatting, styling, etc.
+
+## License
+
+This project is licensed under the [MIT License].
