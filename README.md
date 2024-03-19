@@ -34,4 +34,4 @@ Development dependencies include various packages for linting, code formatting, 
 
 ## License
 
-This project is licensed under the [MIT License].
+This project is licensed under the MIT License.
